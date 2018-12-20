@@ -1,6 +1,3 @@
-import numpy as np
-from sklearn.preprocessing import StandardScaler
-from sklearn.datasets import make_classification
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
@@ -13,21 +10,6 @@ from sklearn.discriminant_analysis import QuadraticDiscriminantAnalysis
 
 
 import data
-
-
-def get_tag(tokens, tag):
-    """Extracts the value inside the given tag."""
-    return tokens[tokens.index('<' + tag + '>') + 1:tokens.index('</' + tag + '>')]
-
-
-def word_feature(file_name):
-    x, reward = [], []
-    with open(file_name) as f:
-        for line in f:
-            tokens = line.strip().split()
-            input = get_tag(tokens, 'input')
-            dialogue = get_tag(tokens, 'dialogue')
-            output = get_tag(tokens, 'output')
 
 
 def parse_dataset(dataset, word_num):
