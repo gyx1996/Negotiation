@@ -1,0 +1,167 @@
+total agree num: 10841
+	 thank : 1419 percentage 0.13089198413430495
+	 can't : 1384 percentage 0.12766349967715154
+	 sorry : 1324 percentage 0.12212895489346001
+	 only : 1129 percentage 0.10414168434646251
+	 make : 1106 percentage 0.10202010884604741
+	 work : 1064 percentage 0.09814592749746333
+	 up : 1033 percentage 0.09528641269255604
+	 least : 1022 percentage 0.09427174614887926
+	 well : 969 percentage 0.0893828982566184
+	 really : 955 percentage 0.08809150447375703
+	 offer : 899 percentage 0.08292592934231159
+	 good : 896 percentage 0.08264920210312701
+	 sound : 839 percentage 0.07739138455862005
+	 hi : 837 percentage 0.077206899732497
+	 as : 791 percentage 0.07296374873166682
+	 value : 757 percentage 0.06982750668757495
+	 great : 756 percentage 0.06973526427451342
+	 please : 741 percentage 0.06835162807859053
+	 that's : 625 percentage 0.05765150816345355
+	 fine : 581 percentage 0.05359284198874643
+	 either : 559 percentage 0.05156350890139286
+	 don't : 559 percentage 0.05156350890139286
+	 worth : 545 percentage 0.0502721151185315
+agree:
+--------------------
+reward: 0, 1, 2, 3, 4
+dialog num: 417
+	 only : 52 percentage:  0.12470023980815348
+	 really : 44 percentage:  0.10551558752997602
+	 thank : 44 percentage:  0.10551558752997602
+	 sorry : 43 percentage:  0.10311750599520383
+	 can't : 43 percentage:  0.10311750599520383
+	 work : 37 percentage:  0.08872901678657075
+	 up : 32 percentage:  0.07673860911270983
+	 please : 30 percentage:  0.07194244604316546
+	 good : 30 percentage:  0.07194244604316546
+	 sure : 29 percentage:  0.06954436450839328
+	 make : 29 percentage:  0.06954436450839328
+	 don't : 28 percentage:  0.0671462829736211
+	 fine : 27 percentage:  0.06474820143884892
+	 either : 26 percentage:  0.06235011990407674
+	 this : 25 percentage:  0.05995203836930456
+	 as : 25 percentage:  0.05995203836930456
+	 sound : 25 percentage:  0.05995203836930456
+	 great : 24 percentage:  0.05755395683453238
+	 agree : 23 percentage:  0.05515587529976019
+	 hi : 23 percentage:  0.05515587529976019
+	 well : 22 percentage:  0.05275779376498801
+--------------------
+reward: 5
+dialog num: 725
+	 least : 117 percentage:  0.16137931034482758
+	 split : 109 percentage:  0.1503448275862069
+	 can't : 102 percentage:  0.1406896551724138
+	 only : 91 percentage:  0.12551724137931033
+	 work : 85 percentage:  0.11724137931034483
+	 thank : 79 percentage:  0.10896551724137932
+	 really : 76 percentage:  0.10482758620689656
+	 up : 67 percentage:  0.09241379310344827
+	 good : 65 percentage:  0.0896551724137931
+	 sorry : 63 percentage:  0.08689655172413793
+	 make : 62 percentage:  0.08551724137931034
+	 well : 61 percentage:  0.08413793103448276
+	 offer : 61 percentage:  0.08413793103448276
+	 either : 58 percentage:  0.08
+	 that's : 58 percentage:  0.08
+	 worth : 56 percentage:  0.07724137931034483
+	 sound : 52 percentage:  0.07172413793103448
+	 please : 50 percentage:  0.06896551724137931
+	 fine : 50 percentage:  0.06896551724137931
+	 other : 49 percentage:  0.06758620689655172
+	 value : 47 percentage:  0.06482758620689655
+	 points : 46 percentage:  0.06344827586206897
+	 as : 45 percentage:  0.06206896551724138
+	 great : 45 percentage:  0.06206896551724138
+	 same : 43 percentage:  0.05931034482758621
+	 hello : 37 percentage:  0.05103448275862069
+--------------------
+reward: 6
+dialog num: 2498
+	 thank : 303 percentage:  0.12129703763010408
+	 can't : 239 percentage:  0.09567654123298638
+	 work : 225 percentage:  0.0900720576461169
+	 only : 224 percentage:  0.08967173738991192
+	 least : 210 percentage:  0.08406725380304243
+	 really : 208 percentage:  0.08326661329063251
+	 well : 198 percentage:  0.07926341072858287
+	 up : 189 percentage:  0.0756605284227382
+	 offer : 186 percentage:  0.0744595676541233
+	 make : 185 percentage:  0.07405924739791833
+	 good : 178 percentage:  0.07125700560448359
+	 sorry : 158 percentage:  0.0632506004803843
+	 sound : 157 percentage:  0.06285028022417935
+	 hi : 153 percentage:  0.061248999199359486
+	 as : 149 percentage:  0.059647718174539635
+	 great : 146 percentage:  0.05844675740592474
+	 please : 143 percentage:  0.057245796637309845
+	 that's : 142 percentage:  0.05684547638110488
+	 value : 132 percentage:  0.05284227381905524
+	 fine : 130 percentage:  0.05204163330664532
+--------------------
+reward: 7
+dialog num: 1658
+	 thank : 201 percentage:  0.12123039806996382
+	 least : 160 percentage:  0.09650180940892641
+	 sound : 125 percentage:  0.07539203860072376
+	 can't : 125 percentage:  0.07539203860072376
+	 sorry : 118 percentage:  0.07117008443908324
+	 offer : 116 percentage:  0.06996381182147166
+	 good : 111 percentage:  0.0669481302774427
+	 well : 109 percentage:  0.06574185765983112
+	 make : 107 percentage:  0.06453558504221954
+	 really : 103 percentage:  0.062123039806996384
+	 only : 102 percentage:  0.061519903498190594
+	 work : 102 percentage:  0.061519903498190594
+	 up : 100 percentage:  0.06031363088057901
+	 please : 98 percentage:  0.05910735826296743
+	 as : 98 percentage:  0.05910735826296743
+	 great : 97 percentage:  0.05850422195416164
+	 hi : 94 percentage:  0.05669481302774427
+	 value : 93 percentage:  0.05609167671893848
+	 fine : 83 percentage:  0.05006031363088058
+--------------------
+reward: 8
+dialog num: 2463
+	 thank : 329 percentage:  0.13357693869265125
+	 sound : 195 percentage:  0.07917174177831912
+	 good : 186 percentage:  0.07551766138855055
+	 great : 184 percentage:  0.07470564352415753
+	 hi : 174 percentage:  0.07064555420219244
+	 please : 165 percentage:  0.06699147381242387
+	 least : 157 percentage:  0.0637434023548518
+	 really : 151 percentage:  0.06130734876167276
+	 work : 149 percentage:  0.060495330897279743
+	 can't : 142 percentage:  0.05765326837190418
+	 sorry : 137 percentage:  0.05562322371092164
+	 only : 129 percentage:  0.05237515225334957
+--------------------
+reward: 9
+dialog num: 1007
+	 thank : 138 percentage:  0.13704071499503476
+	 sound : 73 percentage:  0.07249255213505462
+	 hi : 72 percentage:  0.07149950347567031
+	 great : 71 percentage:  0.070506454816286
+	 good : 67 percentage:  0.06653426017874876
+	 please : 66 percentage:  0.06554121151936444
+	 sure : 54 percentage:  0.05362462760675273
+	 offer : 54 percentage:  0.05362462760675273
+	 really : 53 percentage:  0.05263157894736842
+	 well : 53 percentage:  0.05263157894736842
+	 fine : 52 percentage:  0.05163853028798411
+--------------------
+reward: 10
+dialog num: 2073
+	 thank : 272 percentage:  0.13121080559575493
+	 sound : 170 percentage:  0.08200675349734685
+	 great : 170 percentage:  0.08200675349734685
+	 good : 160 percentage:  0.07718282682103232
+	 hi : 153 percentage:  0.07380607814761216
+	 only : 153 percentage:  0.07380607814761216
+	 really : 124 percentage:  0.05981669078630005
+	 sorry : 112 percentage:  0.054027978774722624
+	 please : 106 percentage:  0.05113362276893391
+	 up : 106 percentage:  0.05113362276893391
+	 can't : 106 percentage:  0.05113362276893391
+--------------------
