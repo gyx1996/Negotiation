@@ -23,7 +23,7 @@ def parse_dataset(dataset, word_num):
     return input_x, output_y
 
 
-names = ["Nearest Neighbors", "Linear SVM", "RBF SVM", "Gaussian Process",
+names = ["Nearest Neighbors", "Linear SVM", "RBF SVM",
          "Decision Tree", "Random Forest", "Neural Net", "AdaBoost",
          "Naive Bayes", "QDA"]
 
@@ -31,7 +31,6 @@ classifiers = [
     KNeighborsClassifier(3),
     SVC(kernel="linear", C=0.025),
     SVC(gamma=2, C=1),
-    GaussianProcessClassifier(1.0 * RBF(1.0)),
     DecisionTreeClassifier(criterion='entropy'),
     RandomForestClassifier(criterion='entropy', max_depth=5, n_estimators=10),
     MLPClassifier(alpha=1),
