@@ -30,8 +30,7 @@ class Criterion(object):
         w = torch.Tensor(len(vocabulary)).fill_(1)
         for token in bad_tokens:
             w[vocabulary[token]] = 0.0
-        self.criterion = nn.CrossEntropyLoss(
-            w, reduction='mean')
+        self.criterion = nn.CrossEntropyLoss(w)
 
     def __call__(self, out, tgt):
         return self.criterion(out, tgt)
