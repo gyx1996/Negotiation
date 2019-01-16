@@ -27,7 +27,7 @@ class Criterion(object):
     def __init__(self, vocabulary, bad_tokens=None):
         if bad_tokens is None:
             bad_tokens = []
-        w = torch.Tensor(len(vocabulary)).fill_(1)
+        w = torch.Tensor(len(vocabulary)).fill_(1).to(device)
         for token in bad_tokens:
             w[vocabulary[token]] = 0.0
         self.criterion = nn.CrossEntropyLoss(w)
@@ -51,16 +51,16 @@ class Trainer:
     @staticmethod
     def split_batch_data(batch):
         # input_context: [input_context_length(6), batch_size]
-        input_context = batch['input'].transpose(0, 1).contiguous()
+        input_context = batch['input'].transpose(0, 1).contiguous().to(device)
         # dialogue: [dialogue_length, batch_size]
-        dialogue = batch['dialogue'].transpose(0, 1).contiguous()
+        dialogue = batch['dialogue'].transpose(0, 1).contiguous().to(device)
         # output_item: [output_item_length(6) * batch_size]
-        output_item = batch['output'].transpose(0, 1).contiguous().view(-1)
+        output_item = batch['output'].transpose(0, 1).contiguous().view(-1).to(device)
 
         # dialogue_input: [dialogue_length - 1, batch_size]
-        dialogue_input = dialogue.narrow(0, 0, dialogue.size(0) - 1)
+        dialogue_input = dialogue.narrow(0, 0, dialogue.size(0) - 1).to(device)
         # dialogue_target: [(dialogue_length - 1) * batch_size]
-        dialogue_target = dialogue.narrow(0, 1, dialogue.size(0) - 1).view(-1)
+        dialogue_target = dialogue.narrow(0, 1, dialogue.size(0) - 1).view(-1).to(device)
         return input_context, output_item, dialogue_input, dialogue_target
 
     def iteration(self, epoch, current_learning_rate,
@@ -70,11 +70,6 @@ class Trainer:
         for batch, _ in train_batch:
             input_context, output_item, dialogue_input, dialogue_target = \
                 self.split_batch_data(batch)
-
-            input_context.to(device)
-            output_item.to(device)
-            dialogue_input.to(device)
-            dialogue_target.to(device)
 
             (dialogue_output, dialogue_language_model_out, dialogue_target,
              selection_decoder_outs, output_item) = self.model.forward(
