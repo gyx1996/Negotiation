@@ -118,24 +118,36 @@ class Trainer:
 
         train_batch = Batch(dataset.train, batch_size, SequentialSampler())
         valid_batch = Batch(dataset.valid, batch_size, SequentialSampler())
+        train_loss_list = []
+        valid_word_loss_list = []
+        valid_select_loss_list = []
+        lr_list = []
         for epoch in range(1, max_epoch + 1):
             train_loss, valid_word_loss, valid_select_loss = self.iteration(
                 epoch, learning_rate, train_batch, valid_batch)
             if valid_select_loss < best_valid_select_loss:
                 best_valid_select_loss = valid_select_loss
                 best_model = copy.deepcopy(self.model)
-
+            train_loss_list.append(train_loss)
+            valid_word_loss_list.append(valid_word_loss)
+            valid_select_loss_list.append(valid_select_loss)
+            lr_list.append(learning_rate)
             if not epoch % 10:
                 with open('../model/' + str(epoch) + '-' + str(learning_rate),
                           'wb') as f:
                     torch.save(self.model, f)
+
+                print(train_loss_list)
+                print(valid_word_loss_list)
+                print(valid_select_loss_list)
+                print(lr_list)
 
         print('Anneal: best valid select loss %.3f' % best_valid_select_loss)
         with open('../model/best-before-' + str(max_epoch), 'wb') as f:
             torch.save(self.model, f)
 
         self.model = best_model
-        for epoch in range(max_epoch + 1, 100):
+        for epoch in range(max_epoch + 1, 100 + 1):
             if epoch - last_decay_epoch >= decay_every:
                 last_decay_epoch = epoch
                 learning_rate /= decay_rate
@@ -145,10 +157,20 @@ class Trainer:
                                            lr=learning_rate)
             train_loss, valid_word_loss, valid_select_loss = self.iteration(
                 epoch, learning_rate, train_batch, valid_batch)
+
+            train_loss_list.append(train_loss)
+            valid_word_loss_list.append(valid_word_loss)
+            valid_select_loss_list.append(valid_select_loss)
+            lr_list.append(learning_rate)
             if not epoch % 10:
                 with open('../model/' + str(epoch) + '-' + str(learning_rate),
                           'wb') as f:
                     torch.save(self.model, f)
+
+                print(train_loss_list)
+                print(valid_word_loss_list)
+                print(valid_select_loss_list)
+                print(lr_list)
 
 
 def main():
