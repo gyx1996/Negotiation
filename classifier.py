@@ -1,8 +1,6 @@
 from sklearn.neural_network import MLPClassifier
 from sklearn.neighbors import KNeighborsClassifier
 from sklearn.svm import SVC
-from sklearn.gaussian_process import GaussianProcessClassifier
-from sklearn.gaussian_process.kernels import RBF
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.naive_bayes import GaussianNB
@@ -19,7 +17,7 @@ def parse_dataset(dataset, word_num):
         for idx in indexes:
             x[idx] = 1
         input_x.append(x)
-        output_y.append(r)
+        output_y.append(r > 7)
     return input_x, output_y
 
 

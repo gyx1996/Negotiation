@@ -1,6 +1,6 @@
 from collections import OrderedDict
 import numpy as np
-
+np.seterr(divide='ignore', invalid='ignore')
 
 STOP_WORDS = {'YOU:', 'THEM:', 'and', 'i', 'you', 'have', 'would', 'like',
               '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10',
@@ -34,6 +34,10 @@ def count_words_for_each_reward(file_name):
                 reward = tokens[-8].split('=')[1]
                 if reward.isdigit():
                     reward = int(reward)
+                    if reward <= 5:
+                        reward = 5
+                    else:
+                        reward = 6
                     count_list[reward] += 1
                     word_count_list[reward] += len(tokens[6:-12])
                 else:
@@ -41,21 +45,33 @@ def count_words_for_each_reward(file_name):
             else:
                 reward = 0
             tokens = tokens[6:-12]
-            for token in tokens:
-                if token in {'thanks', 'sounds', 'basketballs', 'books', 'balls', 'hats'}:
-                    token = token.rstrip('s')
-                word_dict[token] = word_dict.get(token, 0) + 1
+            for token in set(tokens):
                 if agree:
+                    word_dict[token] = word_dict.get(token, 0) + 1
                     agree_reward_dict_list[reward][token] = \
                         agree_reward_dict_list[reward].get(token, 0) + 1
     return word_dict, agree_reward_dict_list, count_list, word_count_list
 
 
+def input_distribution():
+    with open('data/negotiate/data.txt') as fd:
+        lines = fd.readlines()
+        count_dict = {}
+        for line in lines:
+            input_numbers = tuple(line.split()[:6])
+            if input_numbers in count_dict:
+                count_dict[input_numbers] += 1
+            else:
+                count_dict[input_numbers] = 0
+        sorted_list = sorted(count_dict.items(), key=lambda x: x[1])
+        print(sorted_list)
+
+
 def main():
+    input_distribution()
+    exit(0)
     path = 'data/negotiate/'
     word_dict, agree_reward_dict_list, count_list, word_count_list = count_words_for_each_reward(path + 'data.txt')
-    print(sorted(word_dict.items(), key=lambda x: x[1], reverse=True)[500])
-    exit(0)
     total_num = sum(count_list)
     print('total agree num:', total_num)
     '''for word, count in sorted_list:
@@ -65,18 +81,39 @@ def main():
         else:
             break'''
     print('agree:')
-    for i in range(11):
+    for i in range(5, 7):
         print('reward: ' + str(i))
         print('dialog num: ' + str(count_list[i]))
         tf_idf_dict = {}
+        mi_dict = {}
+        #for word in ['deal', '<selection>', 'button', 'have', 'take', 'need', ',']:
+            #count = agree_reward_dict_list[i][word]
         for word, count in agree_reward_dict_list[i].items():
             tf = count / word_count_list[i]
             idf = np.log(total_num / (word_dict[word] + 1))
             tf_idf_dict[word] = tf * idf
-        tf_idf_sorted = sorted(tf_idf_dict.items(), key=lambda x: x[1], reverse=True)
-        for j in range(min(50, len(tf_idf_sorted))):
-            word, tf_idf = tf_idf_sorted[j]
-            print('\t', word, 'TF-IDF: ', tf_idf)
+            n = total_num
+            n_11 = count
+            n_01 = count_list[i] - count
+            n_10 = word_dict[word] - count
+            n_00 = n - count_list[i] - n_10
+            n_1_ = word_dict[word]
+            n__1 = count_list[i]
+            n_0_ = total_num - word_dict[word]
+            n__0 = total_num - count_list[i]
+            #print(word, n, n_11, n_01, n_10, n_00, n_1_, n__1, n_0_, n__0)
+            mi_1 = (n_11 / n) * np.log2(n * n_11 / (n_1_ * n__1 + 1))
+            mi_2 = (n_01 / n) * np.log2(n * n_01 / (n_0_ * n__1 + 1))
+            mi_3 = (n_10 / n) * np.log2(n * n_10 / (n_1_ * n__0 + 1))
+            mi_4 = (n_00 / n) * np.log2(n * n_00 / (n_0_ * n__0 + 1))
+            mi = mi_1 + mi_2 + mi_3 + mi_4
+            if np.isnan(mi):
+                mi = 0
+            mi_dict[word] = mi
+        mi_sorted = sorted(mi_dict.items(), key=lambda x: x[1], reverse=True)
+        for j in range(min(50, len(mi_sorted))):
+            word, mi = mi_sorted[j]
+            print('\t', word, 'MI: ', mi)
         print('-' * 20)
     exit(0)
     thank_percent = []
