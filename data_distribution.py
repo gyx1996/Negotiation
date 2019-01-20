@@ -56,15 +56,73 @@ def count_words_for_each_reward(file_name):
 def input_distribution():
     with open('data/negotiate/data.txt') as fd:
         lines = fd.readlines()
-        count_dict = {}
+    count_dict = {}
+    i = 0
+    fd1 = open('data/same_background1.txt', 'w')
+
+    while i + 1 < len(lines):
+        input_numbers = tuple(lines[i].split()[:6])
+        sign1 = lines[i].split()[6]
+        sign2 = lines[i + 1].split()[6]
+        input_numbers_next = tuple(lines[i + 1].split()[:6])
+        if (input_numbers[0] == input_numbers_next[0]
+            and input_numbers[2] == input_numbers_next[2]
+            and input_numbers[4] == input_numbers_next[4]
+            and {sign1, sign2} == {'YOU:', 'THEM:'}):
+            input_number_pairs = tuple(lines[i].split()[:6] + lines[i + 1].split()[:6])
+            if input_number_pairs in count_dict:
+                count_dict[input_number_pairs] += 1
+            else:
+                count_dict[input_number_pairs] = 1
+            if input_number_pairs == ('2', '1', '2', '1', '3', '2', '2', '0', '2', '5', '3', '0'):
+                fd1.write(lines[i])
+                fd1.write(lines[i + 1])
+            i += 1
+        else:
+            i += 1
+    sorted_list = sorted(count_dict.items(), key=lambda x: x[1], reverse=True)
+    print(sorted_list)
+    count = 0
+    count1 = 0
+    count2 = 0
+    pair_dict = {}
+    k = 0
+    for i, j in sorted_list:
+        if j > 1:
+            count += j
+            count2 += 1
+            if i not in pair_dict:
+                pair_dict[i] = k
+                k += 1
+        count1 += j
+    print(count, count1, count2, len(lines), k)
+    pair_dict_text = {}
+    i = 0
+    while i + 1 < len(lines):
+        input_numbers = tuple(lines[i].split()[:6])
+        input_numbers_next = tuple(lines[i + 1].split()[:6])
+        if (input_numbers[0] == input_numbers_next[0]
+            and input_numbers[2] == input_numbers_next[2]
+            and input_numbers[4] == input_numbers_next[4]):
+            input_number_pairs = tuple(lines[i].split()[:6] + lines[i + 1].split()[:6])
+            if input_number_pairs in pair_dict:
+                if input_number_pairs in pair_dict_text:
+                    pair_dict_text[input_number_pairs].append(lines[i])
+
+    return
+    count_dict = {}
+    with open('data/same_background.txt', 'w') as fd1:
+
         for line in lines:
             input_numbers = tuple(line.split()[:6])
+            if input_numbers == ('2', '1', '2', '1', '3', '2'):
+                fd1.write(line + '\n')
             if input_numbers in count_dict:
                 count_dict[input_numbers] += 1
             else:
                 count_dict[input_numbers] = 0
-        sorted_list = sorted(count_dict.items(), key=lambda x: x[1])
-        print(sorted_list)
+    sorted_list = sorted(count_dict.items(), key=lambda x: x[1], reverse=True)
+    print(sorted_list)
 
 
 def main():

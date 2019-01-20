@@ -1,0 +1,126 @@
+2 1 2 1 3 2 THEM: i'd like the hats and books <eos> YOU: ill give you all books with a hat , i get to keep a hats <eos> THEM: how about this , i get the hats you take everything else . deal ? <eos> YOU: deal <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: i would like just 2 books and 1 hat <eos> YOU: and i can have 1 hat and 3 balls ? <eos> THEM: actually i would like 2 books and 2 hats ? <eos> YOU: no sorry , i dont mind the books but i need 1 hat <eos> THEM: ok ill keep 2 books and 1 hat u have the rest <eos> YOU: thanks <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 3 2 2 3 0
+
+2 1 2 1 3 2 YOU: i would like all the balls and 2 other items of your choosing . <eos> THEM: i can give you all the balls , but only 1 other item if i do . how does all the balls and 1 hat sound ? <eos> YOU: eh , i'll take it . <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 3 2 2 3 0
+
+2 1 2 1 3 2 THEM: i would like the balls and one hat <eos> YOU: i need the balls as well . can i have two balls and one hat and the books ? <eos> THEM: no deal that would give me 3 points . i need 2 balls and 1 hat <eos> YOU: i do not think we can reach a deal . no deal . <eos> THEM: i am willing to take 1 ball and eithr both hats or both books , your choice <eos> YOU: you can have one ball and two hats <eos> THEM: <selection> item0=2 item1=0 item2=2 <eos> reward=6 agree 2 1 2 1 3 2
+
+2 1 2 1 3 2 YOU: i would like the balls and one hat <eos> THEM: i need the balls as well . can i have two balls and one hat and the books ? <eos> YOU: no deal that would give me 3 points . i need 2 balls and 1 hat <eos> THEM: i do not think we can reach a deal . no deal . <eos> YOU: i am willing to take 1 ball and eithr both hats or both books , your choice <eos> THEM: you can have one ball and two hats <eos> YOU: <selection> item0=0 item1=2 item2=1 <eos> reward=4 agree 2 1 2 1 3 2
+
+2 1 2 1 3 2 THEM: can i have the books and a hat please ? <eos> YOU: is that the best deal you got ? <eos> THEM: yeah <eos> YOU: ok , ill take it <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: hi , can i have 2 hats and one ball ? <eos> YOU: no <eos> THEM: how about 2 hats and you can have the rest <eos> YOU: that sound ok <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: you can have two balls and one hat <eos> YOU: can i have 2 hats ? it`s not good on my side without 2 hats <eos> THEM: yes two hats and two balls <eos> YOU: no , all balls and 2 hats <eos> THEM: all balls and one hat . deal ? <eos> YOU: it does not work for me , i really need 2 hats , or 2 books or one of each . <eos> THEM: is a deal 2 hats and 2 book <eos> YOU: no , i need the balls and one of each to cut it fair <eos> THEM: what do you want all the ball and what else ? <eos> YOU: i want all balls , one hat and one book . <eos> THEM: no 2 balls 1 hat and 1 book <eos> YOU: sorry no deal <eos> THEM: <selection> no agreement <eos> reward=no agreement agree 2 3 2 2 3 0
+
+2 1 2 1 3 2 YOU: i will take all balls and hats you take the rest <eos> THEM: you can have all the balls if i have both the hats . <eos> YOU: ok <eos> THEM: deal ? <eos> YOU: ok <eos> THEM: <selection> item0=0 item1=0 item2=2 <eos> reward=4 disagree 2 2 2 3 3 0
+
+2 1 2 1 3 2 THEM: hello , can i have the hats and a book ? you can have the balls . <eos> YOU: one book <eos> THEM: so 1 book and 3 balls for you , 1 book 2 hats for me ? <eos> YOU: deal <eos> THEM: thank you <eos> YOU: <selection> item0=1 item1=0 item2=3 <eos> reward=7 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: i would like the two hats <eos> YOU: okay . you can have two hats , one ball , and one book . that would be an equal points split for us . <eos> THEM: <selection> item0=1 item1=0 item2=2 <eos> reward=5 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 YOU: gimme the balls and hats <eos> THEM: sorry ill give you teh books and you get a balls and a hats <eos> YOU: deal <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 disagree 2 0 2 2 3 2
+
+2 1 2 1 3 2 YOU: ok what do you want <eos> THEM: i'd like the books and the hats . <eos> YOU: ball are zeros so lets split the books and hats <eos> THEM: ok , that's not great for me , but i think it's the best deal we can make . you can take the balls . <eos> YOU: and one hat <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 disagree 2 2 2 3 3 0
+
+2 1 2 1 3 2 THEM: how about you take the 3 balls and 2 hats , i take the 2 books <eos> YOU: that deal seems reasonable . deal . <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: hi i would like the hats and books and you can have the balls <eos> YOU: can you add me either a book or a hat ? <eos> THEM: sorry thats the best i can do <eos> YOU: what value does that give you ? <eos> THEM: 7 <eos> YOU: the books give me six <eos> THEM: looks like we wont reach a deal <eos> YOU: no deal then <eos> THEM: no deal <eos> YOU: no deal <eos> THEM: <selection> no agreement <eos> reward=no agreement agree 2 1 2 4 3 0
+
+2 1 2 1 3 2 YOU: i would like all the balls and one book <eos> THEM: i can give both books but need 2 balls and the hats <eos> YOU: ok deal <eos> THEM: <selection> item0=2 item1=0 item2=1 <eos> reward=4 agree 2 0 2 2 3 2
+
+2 1 2 1 3 2 THEM: hi i would like the books and hats and you can have the balls <eos> YOU: i will need at least one or two of those other objects to make a deal . <eos> THEM: the best i can do is offer you the balls and 1 hat <eos> YOU: deal . <eos> THEM: thank you <eos> YOU: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 4 2 1 3 0
+
+2 1 2 1 3 2 THEM: can i have just the books ? <eos> YOU: ok , deal <eos> THEM: deal <eos> YOU: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: if i can have the two hats you can have the rest . <eos> YOU: hi , can i have the balls and 2 hats ? <eos> THEM: i need the hats . <eos> YOU: ok , keep the hats , i`ll get 3 balls and 2 books , deal ? <eos> THEM: deal <eos> YOU: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: books and hats for me <eos> YOU: how about i get 3 balls and one 2 hats or books <eos> THEM: two books and a hat for me ? <eos> YOU: yes , if it`s ok with you <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 3 2 2 3 0
+
+2 1 2 1 3 2 THEM: give me both hats and a ball <eos> YOU: sorry , i need the 3 balls and one book or hat <eos> THEM: give me 2 hats an both books <eos> YOU: no deal , thats low for me . need 3 balls and something else <eos> THEM: both hats to me and one book <eos> YOU: <selection> item0=1 item1=0 item2=3 <eos> reward=7 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: i would like the books and the hats . <eos> YOU: i ll take the balls but i need one book <eos> THEM: deal . <eos> YOU: ok is this your final <eos> THEM: yes . <eos> YOU: <selection> item0=1 item1=0 item2=3 <eos> reward=7 agree 2 1 2 4 3 0
+
+2 1 2 1 3 2 THEM: i need the two books and hats <eos> YOU: you can have two books and one hat <eos> THEM: no deal <eos> YOU: okay then i need the balls and one book <eos> THEM: no , i cant give out the book <eos> YOU: okay well , it looks like we can not make a deal as you are unwilling to accept my offer <eos> THEM: you are the one who rejected my offer <eos> YOU: i need the balls and one other object if that does not work for you then we are at a no deal . <eos> THEM: we have no deal <eos> YOU: no deal <eos> THEM: <selection> no agreement <eos> reward=no agreement agree 2 3 2 2 3 0
+
+2 1 2 1 3 2 THEM: hi i would like the books and 1 hat and you can have the balls and 1 hat <eos> YOU: can i have the balls , 1 hat and 1 book ? <eos> THEM: the best i can do is offer you the hats and balls and i keep the books <eos> YOU: ok deal <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 YOU: ok you take one book , and one hat <eos> THEM: i need both books and you can have everything else <eos> YOU: ok dea <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: i'll take the hats you can have everything else <eos> YOU: okay , deal . thank you ! <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 YOU: i'll take balls and books <eos> THEM: take the balls and one book <eos> YOU: then i also need a hat <eos> THEM: deal <eos> YOU: <selection> item0=1 item1=1 item2=3 <eos> reward=8 disagree 2 3 2 2 3 0
+
+2 1 2 1 3 2 THEM: give me the hats and one book and one ball <eos> YOU: all balls and either the hats or books to me <eos> THEM: hats and books to me <eos> YOU: one hat and three balls to me <eos> THEM: both hats to me , you get rest <eos> YOU: ok deal <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: i would like the books and the hats <eos> YOU: i will take the balls but you have to give me atleast one hat or a book <eos> THEM: you can have 1 hat along with the balls . deal ? <eos> YOU: done deal <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 4 2 1 3 0
+
+2 1 2 1 3 2 THEM: i would like 2 hats , you can have the rest <eos> YOU: okay . <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: can i get the two books and the hats ? <eos> YOU: one book and one hat <eos> THEM: does not make much sense <eos> YOU: for you <eos> THEM: yes , can i have the two books ? you can have the rest <eos> YOU: ok just two ooks <eos> THEM: yes <eos> YOU: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: i just wat the 2 hats <eos> YOU: ok deal <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 1 2 4 3 0
+
+2 1 2 1 3 2 THEM: i would like all the balls and 2 other items of your choosing . <eos> YOU: no , i need at least 2 balls <eos> THEM: if i give you 2 balls , i would need everything else . <eos> YOU: how about i get 2 balls and 1 hat ? <eos> THEM: sorry , that doesn't leave me with much . <eos> YOU: well let me have the 3 balls and you take the rest , that way i get 3 items and you get 4 <eos> THEM: can't do that . my 4 items have lower value than the balls . <eos> YOU: again , i get 2 balls and 1 hat and then i have 3 items and you have 4 <eos> THEM: sorry , that's not going to work either . i think we can't work out a deal here . <eos> YOU: that would be a 50 / 50 split <eos> THEM: you're not taking into account values of the items <eos> YOU: the balls are worth two and all else is 1 <eos> THEM: the values are different for the both of us . no deal then ? <eos> YOU: we have to agree on something <eos> THEM: no we don't . there is a button underneath that says "no deal was agreed" . i don't agree with any of your offers . so we don't have an agreement here . <eos> YOU: <selection> no agreement <eos> reward=no agreement agree 2 1 2 1 3 2
+
+2 1 2 1 3 2 YOU: i would like all the balls and 2 other items of your choosing . <eos> THEM: no , i need at least 2 balls <eos> YOU: if i give you 2 balls , i would need everything else . <eos> THEM: how about i get 2 balls and 1 hat ? <eos> YOU: sorry , that doesn't leave me with much . <eos> THEM: well let me have the 3 balls and you take the rest , that way i get 3 items and you get 4 <eos> YOU: can't do that . my 4 items have lower value than the balls . <eos> THEM: again , i get 2 balls and 1 hat and then i have 3 items and you have 4 <eos> YOU: sorry , that's not going to work either . i think we can't work out a deal here . <eos> THEM: that would be a 50 / 50 split <eos> YOU: you're not taking into account values of the items <eos> THEM: the balls are worth two and all else is 1 <eos> YOU: the values are different for the both of us . no deal then ? <eos> THEM: we have to agree on something <eos> YOU: no we don't . there is a button underneath that says "no deal was agreed" . i don't agree with any of your offers . so we don't have an agreement here . <eos> THEM: <selection> no agreement <eos> reward=no agreement agree 2 1 2 1 3 2
+
+2 1 2 1 3 2 YOU: everything has a value to me . can i have the balls and whatever else has no value for you ? <eos> THEM: will 2 balls and 2 books work for you ? books have no value to me <eos> YOU: that only give me 6 <eos> THEM: well same here <eos> YOU: ok <eos> THEM: <selection> item0=2 item1=0 item2=2 <eos> reward=6 agree 2 0 2 2 3 2
+
+2 1 2 1 3 2 THEM: i want the balls and the hats <eos> YOU: you can have the hats but , i need the rest <eos> THEM: cant do that <eos> YOU: you can have two hats and one book <eos> THEM: no , i need those balls <eos> YOU: i do as well . unfortunately , i think we can not make a deal <eos> THEM: <selection> item0=2 item1=2 item2=3 <eos> reward=10 disagree 2 1 2 1 3 2
+
+2 1 2 1 3 2 THEM: if i can have both hats you could have the rest <eos> YOU: ok fine by me , i`ll take the rest <eos> THEM: sounds like a deal <eos> YOU: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 YOU: i'd like all balls and 1 book please <eos> THEM: how about i get a hat and a book and you get the rest ? <eos> YOU: okay i'll take 3 balls a book and a hat . deal ? <eos> THEM: deal <eos> YOU: <selection> item0=1 item1=1 item2=3 <eos> reward=8 agree 2 4 2 1 3 0
+
+2 1 2 1 3 2 THEM: you take all balls and i keep the rest <eos> YOU: thats a raw deal <eos> THEM: so <eos> YOU: i get the balls and the books <eos> THEM: one book <eos> YOU: both <eos> THEM: one <eos> YOU: nope <eos> THEM: so you take all balls and all books then , fine <eos> YOU: great <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 1 2 4 3 0
+
+2 1 2 1 3 2 THEM: hats and books <eos> YOU: i need all the balls plus eithe 1 hat or 1 book and you have a deal <eos> THEM: ok , all balls and one book for you <eos> YOU: <selection> item0=1 item1=0 item2=3 <eos> reward=7 agree 2 2 2 3 3 0
+
+2 1 2 1 3 2 THEM: hi there ! i would like the hats , and you can have the rest . <eos> YOU: deal <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: i would like the book <eos> YOU: just one book ? <eos> THEM: 2 books <eos> YOU: okay deal . <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 4 2 1 3 0
+
+2 1 2 1 3 2 YOU: i need 2 balls and one hat <eos> THEM: agree <eos> YOU: <selection> item0=0 item1=1 item2=2 <eos> reward=5 agree 2 2 2 3 3 0
+
+2 1 2 1 3 2 THEM: i would like 2 books , you can have the rest <eos> YOU: ok deal <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 YOU: i'll have the balls , you can have the rest . <eos> THEM: i need both books and 1 ball <eos> YOU: that's fine , and i'll take the rest . <eos> THEM: yes <eos> YOU: <selection> item0=0 item1=2 item2=2 <eos> reward=6 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: how about you get 3 balls and the 2 hats , and i get the 2 books <eos> YOU: sure . deal <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: i don't want any basketballs <eos> YOU: ok , can i have a few other objects in addition to the balls ? <eos> THEM: want any books ? <eos> YOU: can i have both ? <eos> THEM: if i can have the hats , you can have both books and all the balls . <eos> YOU: deal . <eos> THEM: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 YOU: if i can have the balls and the hats you can have the books <eos> THEM: one hat and the books for me <eos> YOU: that seems reasonable . deal . <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 4 2 1 3 0
+
+2 1 2 1 3 2 THEM: what kind of deal can we make ? i really want the books <eos> YOU: i really want the balls , so want to each take 1 hat and what we want ? <eos> THEM: sure <eos> YOU: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 YOU: i need the balls and the hats <eos> THEM: no deal . i'll give you 2 balls and 1 hat . <eos> YOU: i have the have all 3 balls and either a hat or a book <eos> THEM: i need 1 ball 1 hat and 2 books <eos> YOU: no can do , i have to have all 3 balls and wither a hat or a book <eos> THEM: well i need the all the balls too but . i'll settle for 1 ball , 1 hat and 2 books <eos> YOU: i can't do that , no deal <eos> THEM: <selection> item0=2 item1=2 item2=3 <eos> reward=10 disagree 2 1 2 1 3 2
+
+2 1 2 1 3 2 THEM: hats and balls for me <eos> YOU: cant do that . . . i need the balls plus at least 1 other item <eos> THEM: ok , ok , i'll give you everything but the hats <eos> YOU: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 YOU: you take the books and 1 hat , i take the balls and 1 hat <eos> THEM: you could keep the balls but atleast give me 2 hats and one book <eos> YOU: so i get the balls and one book , that is fine <eos> THEM: <selection> item0=1 item1=0 item2=3 <eos> reward=7 agree 2 1 2 4 3 0
+
+2 1 2 1 3 2 THEM: if i can have the hats and one ball you can have the rest <eos> YOU: balls and books for me <eos> THEM: okay deal . <eos> YOU: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: i want the balls and hats <eos> YOU: cant do that . . . balls are most important to me . . . want at least 2 plus 2 other items <eos> THEM: ok , ok , i'll give you the books and balls <eos> YOU: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 YOU: i just want the balls <eos> THEM: deal . <eos> YOU: <selection> item0=0 item1=0 item2=3 <eos> reward=6 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 THEM: hi i would like the books and hats and you can have the balls <eos> YOU: i want the balls and one hat and one book <eos> THEM: sorry i cant do that . i can give you the balls and 1 hat but thats the best i can do <eos> YOU: two hats and the balls ? <eos> THEM: no sorry . <eos> YOU: ok 1 hat and the balls <eos> THEM: <selection> item0=0 item1=1 item2=3 <eos> reward=7 agree 2 3 2 2 3 0
+
+2 1 2 1 3 2 THEM: i need the 3 balls and 1 book <eos> YOU: 2 balls and 1 book and we have a deal <eos> THEM: i get 2 balls and 1 book ? <eos> YOU: yep <eos> THEM: <selection> item0=1 item1=2 item2=1 <eos> reward=5 agree 2 2 2 0 3 2
+
+2 1 2 1 3 2 THEM: hi , i just need the two hats and you could keep all the rest <eos> YOU: ok <eos> THEM: great deal ! <eos> YOU: <selection> item0=2 item1=0 item2=3 <eos> reward=8 agree 2 0 2 5 3 0
+
+2 1 2 1 3 2 YOU: i just want the balls <eos> THEM: deal ! <eos> YOU: <selection> item0=0 item1=0 item2=3 <eos> reward=6 agree 2 4 2 1 3 0
+
+2 1 2 1 3 2 THEM: i need 2 hats and 1 book . <eos> YOU: okay <eos> THEM: <selection> item0=1 item1=0 item2=3 <eos> reward=7 agree 2 2 2 3 3 0
+
+2 1 2 1 3 2 THEM: can i have 2 books annd 1 hat <eos> YOU: i'll give you both books but i need all of the hats and balls <eos> THEM: <selection> item0=0 item1=2 item2=3 <eos> reward=8 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: ok what do you like <eos> YOU: the balls and 1 hat <eos> THEM: so i ll take the books but i one ball as well <eos> YOU: then i need 2 balls and and the hats <eos> THEM: deal <eos> YOU: <selection> item0=0 item1=2 item2=2 <eos> reward=6 agree 2 5 2 0 3 0
+
+2 1 2 1 3 2 THEM: i would like the books and the hats . <eos> YOU: so i get 3 balls ? <eos> THEM: yes . <eos> YOU: okay , that's a deal <eos> THEM: <selection> item0=0 item1=0 item2=3 <eos> reward=6 agree 2 3 2 2 3 0
+
