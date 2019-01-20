@@ -96,19 +96,6 @@ def input_distribution():
                 k += 1
         count1 += j
     print(count, count1, count2, len(lines), k)
-    pair_dict_text = {}
-    i = 0
-    while i + 1 < len(lines):
-        input_numbers = tuple(lines[i].split()[:6])
-        input_numbers_next = tuple(lines[i + 1].split()[:6])
-        if (input_numbers[0] == input_numbers_next[0]
-            and input_numbers[2] == input_numbers_next[2]
-            and input_numbers[4] == input_numbers_next[4]):
-            input_number_pairs = tuple(lines[i].split()[:6] + lines[i + 1].split()[:6])
-            if input_number_pairs in pair_dict:
-                if input_number_pairs in pair_dict_text:
-                    pair_dict_text[input_number_pairs].append(lines[i])
-
     return
     count_dict = {}
     with open('data/same_background.txt', 'w') as fd1:
